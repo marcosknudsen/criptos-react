@@ -28,8 +28,7 @@ const Precio = styled.p`
   }
 `;
 export default function Resultado({ resultado }) {
-  const { PRICE, HIGHDAY, LOWDAY, CHANGEPCT24HOUR, IMAGEURL, LASTUPDATE } =
-    resultado;
+  const { PRICE, HIGHDAY, LOWDAY, CHANGEPCT24HOUR, IMAGEURL } = resultado;
 
   return (
     <Contenedor>
@@ -44,7 +43,6 @@ export default function Resultado({ resultado }) {
         <Texto>Precio máximo hoy: {HIGHDAY}</Texto>
         <Texto>Precio mínimo hoy: {LOWDAY}</Texto>
         <Texto>Variacion ultimas 24hs: {CHANGEPCT24HOUR}</Texto>
-        <Texto>Ultima actualizacion: {LASTUPDATE}</Texto>
       </div>
     </Contenedor>
   );
